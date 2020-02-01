@@ -1,0 +1,114 @@
+body {
+    background: rgba(255, 189, 173, 0.11) url(https://cdn.pixabay.com/photo/2014/06/15/22/36/pattern-369543_1280.png) no-repeat center center fixed;
+    background-size: cover;
+    opacity: 100%;
+}
+
+h1 {
+    font-family: 'Baloo Bhai', cursive;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 3px;
+    color: #ffffff;
+    text-shadow: 0px 10px 13px Black, 5px 5px 15px White ;
+}
+
+.logo{
+    alignment: center;
+
+    margin:0 auto;
+    display:block;
+
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);}
+
+.logo2{
+    alignment: center;
+
+    margin:0 auto;
+    display:block;
+
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);}
+
+
+.myButton {
+
+    font-family: 'Baloo Bhai', cursive;
+    text-align: center;
+    color: Black;
+    font-size: 15px;
+
+    box-shadow: inset 0px 1px 0px 0px #54a3f7;
+    background: linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
+    background-color: #007dc1;
+    border-radius: 3px;
+    border: 1px solid #124d77;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 13px;
+    padding: 10px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #154682;
+
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+
+}
+
+.myButton:hover {
+    background: linear-gradient(to bottom, #0061a7 5%, #007dc1 100%);
+    background-color: #0061a7;
+}
+
+.myButton:active {
+    position: relative;
+    top: 1px;
+}
+
+
+label {
+    font-family: 'Baloo Bhai', cursive;
+    text-align: center;
+    color: Black;
+}
+
+a {
+    font-family: 'Baloo Bhai', cursive;
+    font-size: 15px;
+    font-color: Red;
+}
+
+fieldset {
+    font-family: 'Baloo Bhai', cursive;;
+    font-size: 15px;
+    font-color: Red;
+}
+
+.choiceYourSex {
+    font-family: 'Baloo Bhai', cursive;;
+    font-size: 17px;
+    font-color: Black;
+    outline: none;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 20px 0;
+    padding: 20px 20px 20px 20px;
+    /*padding-inline: 10px;*/
+    text-align: center;
+    text-align-all: center;
+    background: white;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+footer {
+    text-align: center;
+    color: white;
+}
+
+

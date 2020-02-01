@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kalkulator BMI</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+    <link href="http://localhost:8080/style.css" rel="stylesheet">
+    <script src="http://localhost:8080/demo.js"></script>
+</head>
+
+<body>
+<header>
+    <div align="center">
+        <img class="logo" src="http://localhost:8080/images/BMILogo.jpg" width="300px">
+        <h1>Oblicz swój wskaźnik BMI</h1>
+    </div>
+</header>
+<main>
+    </div>
+    <div align="center">
+        <form action="" method="post" novalidate>
+
+            <table>
+                <tbody>
+                <tr>
+                    <td>
+                        <div>
+                            <img src="http://localhost:8080/images/BMIFormula.jpg" class="logo2" width="300px"><BR>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <label for="name">Name: </label>
+                            <input type="text" id="name" name="nameGP" required autofocus><br>
+
+                            <fieldset id="choiceYourSex">
+                                <legend>Choice your sex:</legend>
+                                <input type="radio" value="male" name="sexGP" checked>Male
+                                <input type="radio" value="female" name="sexGP">Female
+                            </fieldset>
+                            <br>
+
+                            <label for="weight">Your weight: </label>
+                            <input type="number" id="weight" min="1" max="300"  name="weightGP" required>
+                            <a> kg</a><br>
+
+                            <label for="height">Your height: </label>
+                            <input type="number" id="height" min="20" max="250"  name="heightGP" required>
+                            <a>cm</a>
+                            <br><br>
+
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>
+                            <input type="button" class="myButton" onclick="doSomeWork()" value="Tester js"/>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <button type="submit" class="myButton">Oblicz</button>
+                        </div>
+                    </td>
+                </tr>
+
+                </tbody>
+            </table>
+            <!--            https://divtable.com/generator/-->
+
+
+        </form>
+    </div>
+</main>
+
+<footer>
+    <p>Created:
+        <time datetime="2020-01-31">31/01/2020</time>
+    </p>
+</footer>
+
+</body>
+</html>
