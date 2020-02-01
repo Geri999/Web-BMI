@@ -12,12 +12,12 @@ public class DBofValuesBMI {
 
     private DBofValuesBMI() {
         bmiList.add("0,16,wygłodzenie");
-        bmiList.add("16,16.99,wychudzenie");
-        bmiList.add("17,18.49,niedowaga");
-        bmiList.add("18.5,24.99,wartość prawidłowa");
-        bmiList.add("25,29.99,nadwaga");
-        bmiList.add("30,34.99,I stopień otyłości");
-        bmiList.add("35,39.99,II stopień otyłości");
+        bmiList.add("16,17,wychudzenie");
+        bmiList.add("17,18.5,niedowaga");
+        bmiList.add("18.5,25,wartość prawidłowa");
+        bmiList.add("25,30,nadwaga");
+        bmiList.add("30,35,I stopień otyłości");
+        bmiList.add("35,40,II stopień otyłości");
         bmiList.add("40,1000,otyłość skrajna");
     }
 
