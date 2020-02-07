@@ -17,7 +17,7 @@
         <!---->
     </div>
     <div>
-        <img src="../static/images/weight loss.png" id="babki_static" th:src="@{/images/weight loss.png}" width="500"><BR>
+        <img src="../static/images/weight loss.png" id="babki_static" th:src="@{/images/weight loss.png}"><BR>
     </div>
     <nav>
         <a href="BMIMainPage.html">Calculate</a>
@@ -30,15 +30,32 @@
 </header>
 
 
+<form action="/BMIFind.html" method="post" novalidate style="padding-top: 15px">
+    <table >
+        <tbody>
+        <tr>
+            <td>
+                <div >
+                    <label for="idRecord">Enter ID numer to find: </label>
+                    <input type="number" id="idRecord" min="1" name="idRecordGP">
+                    <br>
+                </div>
+            </td>
+            <td>
+                <div>
+                    <button type="submit" class="myButton">Find</button>
+                </div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+</form>
+
+
 <div align="center">
-    <!--/*@thymesVar id="line1GP" type=""*/-->
-    <h1 th:text="${line1GP}"></h1>
-
-    <!--/*@thymesVar id="line2GP" type=""*/-->
-    <h1 th:text="${line2GP}"></h1>
-
-    <!--    <img src="http://localhost:8080/images/BMITable.png" class="logo2" width="500px"><BR>-->
-    <img src="../static/images/BMITable.png" th:src="@{/images/BMITable.png} " class="wzor" width="500px">
+<!--/*@thymesVar id="finded" type=""*/-->
+<h1 th:text="${finded}"></h1>
 </div>
 
 <footer>

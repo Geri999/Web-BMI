@@ -30,22 +30,19 @@
 </header>
 
 
-<div align="center">
-    <!--/*@thymesVar id="line1GP" type=""*/-->
-    <h1 th:text="${line1GP}"></h1>
-
-    <!--/*@thymesVar id="line2GP" type=""*/-->
-    <h1 th:text="${line2GP}"></h1>
-
-    <!--    <img src="http://localhost:8080/images/BMITable.png" class="logo2" width="500px"><BR>-->
-    <img src="../static/images/BMITable.png" th:src="@{/images/BMITable.png} " class="wzor" width="500px">
+<div>
+    <h2>What’s BMI?</h2>
+    <p>BMI compares your weight to your height, and is calculated by dividing your weight (in kilograms) by your height (in metres
+        squared). It gives you an idea of whether you’re 'underweight', a 'healthy' weight, 'overweight', or 'obese' for your
+        height. BMI is one type of tool to help health professionals assess the risk for chronic disease.</p>
 </div>
+
+<img src="../static/images/WCRF-BMI-chart-WEB.png" th:src="@{/images/WCRF-BMI-chart-WEB.png}" class="wzor"
+     width="500"/></body>
 
 <footer>
     <p>
         <span>By Gerard<time datetime="2020-01-31">  31/01/2020</time> </span>
     </p>
 </footer>
-
-</body>
 </html>

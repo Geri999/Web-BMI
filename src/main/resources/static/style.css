@@ -1,47 +1,128 @@
+header {
+    text-align: center;
+    vertical-align: baseline;
+    background: white;
+    background: rgba(255, 255, 255, 0.80);
+    background: linear-gradient(90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.1) 10%,
+    rgba(255, 255, 255, 0.5) 25%,
+    rgba(255, 255, 255, 0.5) 75%,
+    rgba(255, 255, 255, 0.1) 90%,
+    rgba(255, 255, 255, 0) 100%);
+}
+
 body {
+    text-align: center;
     background: rgba(255, 189, 173, 0.11) url(https://cdn.pixabay.com/photo/2014/06/15/22/36/pattern-369543_1280.png) no-repeat center center fixed;
     background-size: cover;
     opacity: 100%;
+    vertical-align: baseline;
+    font-size: 12px;
+    font-family: sans-serif;
+    /*background: #2c3e50;*/
 }
+
+footer {
+    text-align: center;
+    color: white;
+    vertical-align: baseline;
+}
+
+span {
+    color: #ffffff;
+}
+
+/*-------------------------*/
+
 
 h1 {
     font-family: 'Baloo Bhai', cursive;
-    font-size: 40px;
+    padding-top: 15px;
+    font-size: 25px;
     text-align: center;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     color: #ffffff;
-    text-shadow: 0px 10px 13px Black, 5px 5px 15px White ;
+    text-shadow: 0px 10px 13px Black, 5px 5px 15px White;
+    /*text-decoration: underline;*/
 }
 
-.logo{
+h2 {
+    font-family: 'Baloo Bhai', cursive;
+    font-weight: bold;
+    padding-top: 5px;
+    font-size: 25px;
+    text-align: center;
+    color: #ffffff;
+}
+
+h4 {
+    font-family: 'Baloo Bhai', cursive;
+    font-weight: lighter;
+    padding-top: 0px;
+    font-size: 12px;
+    text-align: center;
+    color: #000000;
+}
+
+p {
+    display: inline-block;
+    font-family: 'Baloo Bhai', cursive;
+    font-weight: normal;
+    padding-top: 0px;
+    font-size: 15px;
+    color: #ffffff;
+    width: 500px;
+    /*alignment-baseline: center;*/
+    /*text-align-all: center;*/
+    text-align: center;
+    /*alignment: center;*/
+    /*align-content: center;*/
+
+
+}
+
+#wypelniacz {
+    alignment: right;
+    horiz-align: right;
+    text-align: right;
+
+}
+
+.BMIsign {
     alignment: center;
+    padding: 10px 0px 0px 10px;
+    margin: 0 auto;
+    display: block;
+    box-shadow: 10px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    border-radius: 8px;
+}
 
-    margin:0 auto;
-    display:block;
-
-    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
-    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);}
-
-.logo2{
+.wzor {
+    border-radius: 8px;
     alignment: center;
-
-    margin:0 auto;
-    display:block;
-
-    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
-    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);}
+    margin: 0 auto;
+    display: block;
+    box-shadow: 10px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
 
 
 .myButton {
-
     font-family: 'Baloo Bhai', cursive;
     text-align: center;
     color: Black;
     font-size: 15px;
 
     box-shadow: inset 0px 1px 0px 0px #54a3f7;
-    background: linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
-    background-color: #007dc1;
+    /*box-shadow: inset 0px 1px 0px 0px #34495e;*/
+
+
+    /*background: linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);*/
+    /*background-color: #007dc1;*/
+
+    background: linear-gradient(to bottom, #34495e 5%, #0061a7 100%);
+    background-color: #34495e;
+
     border-radius: 3px;
     border: 1px solid #124d77;
     display: inline-block;
@@ -49,11 +130,12 @@ h1 {
     color: #ffffff;
     font-family: Arial;
     font-size: 13px;
+    font-weight: bolder;
     padding: 10px 24px;
     text-decoration: none;
     text-shadow: 0px 1px 0px #154682;
 
-    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    /*-webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);*/
     box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
 
 }
@@ -95,20 +177,103 @@ fieldset {
 }
 
 table {
+    margin: 0 auto;
+    margin-top: 10px;
     border-collapse: separate;
     border-spacing: 20px 0;
+    border-radius: 8px;
     padding: 20px 20px 20px 20px;
     /*padding-inline: 10px;*/
     text-align: center;
     text-align-all: center;
     background: white;
-    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
     box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
 
-footer {
+#babki_static {
+    position: fixed;
+    left: 180px;
+    top: 15px;
+    width: 400px
+
+}
+
+/*-------------------------------------*/
+
+nav {
+    box-shadow: 10px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    margin: 7px auto 0;
+    position: relative;
+    width: 600px;
+    height: 50px;
+    background-color: #34495e;
+    border-radius: 8px;
+    font-size: 0;
+}
+
+nav a {
+    margin-bottom: 32px;
+    line-height: 50px;
+    height: 100%;
+    font-size: 20px;
+    display: inline-block; /* ułożenie w jednej linii*/
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    text-transform: uppercase;
     text-align: center;
     color: white;
+    cursor: pointer; /*palec*/
+    text-shadow: 2px 2px 4px black;
+}
+
+nav .animation {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    transition: all .5s ease 0s;
+    border-radius: 8px;
+}
+
+a:nth-child(1) {
+    width: 150px;
+}
+
+a:nth-child(2) {
+    width: 150px;
+}
+
+a:nth-child(3) {
+    width: 150px;
+}
+
+a:nth-child(4) {
+    width: 150px;
+}
+
+nav a:nth-child(1):hover ~ .animation {
+    width: 150px;
+    left: 0;
+    background-color: #1abc9c;
+}
+
+nav a:nth-child(2):hover ~ .animation {
+    width: 150px;
+    left: 150px;
+    background-color: #e74c3c;
+}
+
+nav a:nth-child(3):hover ~ .animation {
+    width: 150px;
+    left: 300px;
+    background-color: #3498db;
+}
+
+nav a:nth-child(4):hover ~ .animation {
+    width: 150px;
+    left: 450px;
+    background-color: #9b59b6;
 }
 
 

@@ -6,11 +6,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Component
-public class DBofValuesBMI {
+public class ResultInterpretation {
 
     private final List<String> bmiList = new ArrayList<>();
 
-    private DBofValuesBMI() {
+    private ResultInterpretation() {
         bmiList.add("0,16,wygłodzenie");
         bmiList.add("16,17,wychudzenie");
         bmiList.add("17,18.5,niedowaga");

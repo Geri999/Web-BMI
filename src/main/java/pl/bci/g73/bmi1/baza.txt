@@ -1,0 +1,11 @@
+0,Tomek,male,24.0,80.0,170.0
+1,Ania,female,45.0,70.0,158.0
+2,Grzegorz,male,56.0,50.0,178.0
+3,Krzysztof,male,15.0,90.0,185.0
+4,Monika,female,19.0,50.0,190.0
+5,Ala,female,35.0,40.0,151.0
+6,Agnieszka,female,48.0,80.0,168.0
+7,Maniek,male,24.0,100.0,190.0
+8,Gerwazy,male,29.0,58.0,175.0
+9,Ksawery,male,45.0,99.0,180.0
+10,Alina,male,42.0,60.0,170.0

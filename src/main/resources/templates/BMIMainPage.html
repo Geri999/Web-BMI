@@ -1,33 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Kalkulator BMI</title>
     <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
-    <link href="http://localhost:8080/style.css" rel="stylesheet">
-    <script src="http://localhost:8080/demo.js"></script>
+    <script src="../static/demo.js"></script>
+    <link rel="stylesheet" href="../static/style.css" th:href="@{/style.css}">
+
 </head>
 
 <body>
 <header>
-    <div align="center">
-        <img class="logo" src="http://localhost:8080/images/BMILogo.jpg" width="300px">
-        <h1>Oblicz swój wskaźnik BMI</h1>
+    <div>
+        <img class="BMIsign" src="../static/images/BMILogo.jpg" th:src="@{/images/BMILogo.jpg}" width="200">
+        <!--        <h1>Oblicz swój wskaźnik BMI</h1>-->
+        <!---->
     </div>
+    <div>
+        <img src="../static/images/weight loss.png" id="babki_static" th:src="@{/images/weight loss.png}" width="500"><BR>
+    </div>
+    <nav>
+        <a href="BMIMainPage.html">Calculate</a>
+        <a href="BMIFind.html">Find</a>
+        <a href="BMIShowAllFind.html">Show all</a>
+        <a href="BMITheory.html">BMI theory</a>
+        <div class="animation start-home"></div>
+    </nav>
+<br>
 </header>
-<main>
-    </div>
-    <div align="center">
-        <form action="" method="post" novalidate>
 
+
+<main>
+    <div>
+        <form action="" method="post" novalidate>
+            <br>
             <table>
                 <tbody>
                 <tr>
                     <td>
                         <div>
-                            <img src="http://localhost:8080/images/BMIFormula.jpg" class="logo2" width="300px"><BR>
+                            <img src="../static/images/BMIFormula.jpg" th:src="@{/images/BMIFormula.jpg}" class="wzor" width="300"><BR>
                         </div>
                     </td>
+
                     <td>
                         <div>
                             <label for="name">Name: </label>
@@ -35,20 +50,25 @@
 
                             <fieldset id="choiceYourSex">
                                 <legend>Choice your sex:</legend>
-                                <input type="radio" value="male" name="sexGP" checked>Male
-                                <input type="radio" value="female" name="sexGP">Female
+                                <input type="radio" value="male" name="sexGP" checked>male
+                                <input type="radio" value="female" name="sexGP">female
                             </fieldset>
-                            <br>
+                        </div>
+                        <br>
+                        <div id="wypelniacz">
+                            <label for="age">Your age: </label>
+                            <input type="number" id="age" min="1" max="150" name="ageGP" required>
+                            <a> yr</a><br>
+
 
                             <label for="weight">Your weight: </label>
-                            <input type="number" id="weight" min="1" max="300"  name="weightGP" required>
+                            <input type="number" id="weight" min="1" max="300" name="weightGP" required>
                             <a> kg</a><br>
 
                             <label for="height">Your height: </label>
-                            <input type="number" id="height" min="20" max="250"  name="heightGP" required>
+                            <input type="number" id="height" min="20" max="250" name="heightGP" required>
                             <a>cm</a>
                             <br><br>
-
                         </div>
                     </td>
                 </tr>
@@ -60,23 +80,24 @@
                     </td>
                     <td>
                         <div>
-                            <button type="submit" class="myButton">Oblicz</button>
+                            <button type="submit" class="myButton">Calculate</button>
                         </div>
                     </td>
                 </tr>
-
                 </tbody>
             </table>
-            <!--            https://divtable.com/generator/-->
-
 
         </form>
     </div>
+
+
+
+
 </main>
 
 <footer>
-    <p>Created:
-        <time datetime="2020-01-31">31/01/2020</time>
+    <p>
+        <span>By Gerard<time datetime="2020-01-31">  31/01/2020</time> </span>
     </p>
 </footer>
 
