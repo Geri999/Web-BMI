@@ -74,7 +74,7 @@ public class BmiController {
         model.addAttribute("line1GP", name + ", Twóje BMI wynosi: " + Math.round(bmi));
         model.addAttribute("line2GP", "Stan Twojego organizmu to: \"" + resultDescriptionFromBMI + "\".");
 
-        return "BMIResult.html";
+        return "BMIResult";
     }
 
     //--------------------------------------------------------------------------------------------------
@@ -102,6 +102,7 @@ public class BmiController {
     @RequestMapping(value = "/BMIShowAllFind.html", method = RequestMethod.POST)
     public String stronaShowAll(@RequestParam String actionGP, Model model) {
         List list = io.loadWholeDBfromHDD();
+        
         System.out.println(actionGP);
         model.addAttribute("listaGP", list);
         return "BMIShowAllFind.html";
